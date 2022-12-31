@@ -28,7 +28,7 @@ app.get('/', (req,res) => {
     sendError(res, 405)
 })
 
-app.post('/', (req, res) => {  
+app.post('/v1', (req, res) => {  
     const productUrl = req.body.productUrl
 
     //Check if ProductURL was sent
